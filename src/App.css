@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 30px;
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.main_wrapper {
+  width: 250px;
+  height: 100px;
+}
+
+/* phone input */
+.phone_input_wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-height: 2rem;
+}
+.phone_prefix_select,
+.phone_prefix_label,
+.phone_number_input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+/* SELECT */
+.phone_prefix_select {
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  padding: 4px 0 5px;
+  max-height: 2rem;
+}
+.phone_prefix_select div {
+  cursor: default;
+}
+/* LABEL */
+.phone_prefix_label {
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  cursor: pointer;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0.25rem 0 0;
+  width: 3rem;
+  z-index: 2;
+}
+.phone_input_wrapper:hover > .phone_prefix_label {
+  /* Add your desired hover styles here */
+  background-color: #fd0909; /* For example */
+  border-color: #fd0909; /* For example */
+}
+/* INPUT */
+.phone_number_input {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  margin-left: 3rem;
+  padding: 4px 0 2px 0 !important;
+  z-index: 3;
+}
+.phone_number_input input {
+  margin-left: 2px;
+}
